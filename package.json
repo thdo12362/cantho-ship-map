@@ -1,0 +1,17 @@
+{
+  "name": "cantho-ship-map",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node -e \"require('fs').copyFileSync('dist/index.html', 'dist/404.html')\"",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test",
+    "data:check": "node scripts/gis/run-python.mjs --write-report",
+    "data:ready": "node scripts/gis/run-python.mjs --require-complete"
+  },
+  "engines": { "node": ">=22.12.0" },
+  "dependencies": { "leaflet": "^1.9.4", "react": "^19.3.1", "react-dom": "^19.3.1" },
+  "devDependencies": { "vite": "^8.3.8" }
+}

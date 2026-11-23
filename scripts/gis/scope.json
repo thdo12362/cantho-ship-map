@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "province": "Cần Thơ",
+  "legal_source": "resolution-1668",
+  "effective_date": "2025-07-01",
+  "ward_id_scheme": "Project IDs, not official administrative codes",
+  "study_bbox": [105.6655276, 9.9543542, 105.8454722, 10.1178966],
+  "study_bbox_source": "Envelope of the nine OSM boundary candidates in the dated 2026-11-22 PBF. Reference extent only; not a verified official administrative boundary.",
+  "osm_boundary_relations": {"ct-ninh-kieu":"13512464","ct-cai-khe":"13512379","ct-tan-an":"13512595","ct-an-binh":"13512619","ct-binh-thuy":"13514267","ct-long-tuyen":"13514288","ct-thoi-an-dong":"13514289","ct-cai-rang":"10136998","ct-hung-phu":"10136993"},
+  "wards": [
+    {"ward_id":"ct-ninh-kieu","name":"Ninh Kiều","article":1,"legacy_names":[{"name":"Tân An","scope":"whole"},{"name":"Thới Bình","scope":"whole"},{"name":"Xuân Khánh","scope":"whole"}]},
+    {"ward_id":"ct-cai-khe","name":"Cái Khế","article":2,"legacy_names":[{"name":"An Hòa","scope":"whole"},{"name":"Cái Khế","scope":"whole"},{"name":"Bùi Hữu Nghĩa","scope":"partial"}]},
+    {"ward_id":"ct-tan-an","name":"Tân An","article":3,"legacy_names":[{"name":"An Khánh","scope":"whole"},{"name":"Hưng Lợi","scope":"whole"}]},
+    {"ward_id":"ct-an-binh","name":"An Bình","article":4,"legacy_names":[{"name":"An Bình","scope":"whole"},{"name":"Mỹ Khánh","scope":"whole"},{"name":"Long Tuyền","scope":"partial"}]},
+    {"ward_id":"ct-binh-thuy","name":"Bình Thủy","article":6,"legacy_names":[{"name":"An Thới","scope":"whole"},{"name":"Bình Thủy","scope":"whole"},{"name":"Bùi Hữu Nghĩa","scope":"remainder_after_article_2"}]},
+    {"ward_id":"ct-long-tuyen","name":"Long Tuyền","article":7,"legacy_names":[{"name":"Long Hòa","scope":"whole"},{"name":"Long Tuyền","scope":"remainder_after_article_4"}]},
+    {"ward_id":"ct-thoi-an-dong","name":"Thới An Đông","article":5,"legacy_names":[{"name":"Trà An","scope":"whole"},{"name":"Trà Nóc","scope":"whole"},{"name":"Thới An Đông","scope":"whole"}]},
+    {"ward_id":"ct-cai-rang","name":"Cái Răng","article":8,"legacy_names":[{"name":"Lê Bình","scope":"whole"},{"name":"Thường Thạnh","scope":"whole"},{"name":"Ba Láng","scope":"whole"},{"name":"Hưng Thạnh","scope":"whole"}]},
+    {"ward_id":"ct-hung-phu","name":"Hưng Phú","article":9,"legacy_names":[{"name":"Tân Phú","scope":"whole"},{"name":"Phú Thứ","scope":"whole"},{"name":"Hưng Phú","scope":"whole"}]}
+  ]
+}

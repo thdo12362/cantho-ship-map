@@ -1,0 +1,24 @@
+{
+  "source_title": "Quyết định 19/2025/QĐ-TTg – Bảng danh mục và mã số các đơn vị hành chính Việt Nam",
+  "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/7/19ttg.signed.pdf",
+  "catalog_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=214409",
+  "source_sha256": "2fd391335947affbfb86fa2b9438f0fdca90694e80887e205266542c3236aea1",
+  "pdf_page": 137,
+  "printed_page": 132,
+  "table_heading": "92. THÀNH PHỐ CẦN THƠ",
+  "effective_date": "2025-07-01",
+  "verification_method": "Manually checked against the full rendered scanned PDF page; text extraction was empty. Applies to the promulgated 2025 table, not a claim that no subsequent changes exist.",
+  "verification_state": "VERIFIED_OFFICIAL",
+  "verification_scope": "Administrative names and codes only; no boundary geometry is supplied or certified by this table.",
+  "codes": {
+    "ct-ninh-kieu": "31135",
+    "ct-cai-khe": "31120",
+    "ct-tan-an": "31147",
+    "ct-an-binh": "31150",
+    "ct-binh-thuy": "31168",
+    "ct-long-tuyen": "31183",
+    "ct-thoi-an-dong": "31174",
+    "ct-cai-rang": "31186",
+    "ct-hung-phu": "31201"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "review_date": "2026-11-23",
+  "assessments": [
+    {
+      "source_id": "national-administrative-boundaries",
+      "name": "CSDL địa giới hành chính Việt Nam",
+      "url": "https://thongtin.diagioi.gov.vn/",
+      "verification_state": "UNVERIFIED",
+      "observed_capabilities": ["Publicly indexed API documentation", "WMS GetMap and GetFeatureInfo", "WFS GetFeature with GeoJSON/GML output documented", "AdminMap JavaScript SDK"],
+      "documentation_urls": [
+        "https://thongtin.diagioi.gov.vn/docs/files/code/REST_API/wfs-js.html",
+        "https://thongtin.diagioi.gov.vn/docs/files/code/REST_API/wms-js.html",
+        "https://thongtin.diagioi.gov.vn/docs/files/code/JavaScript_API/map-js.html",
+        "https://thongtin.diagioi.gov.vn/docs/files/code/Examples/wfs-js.html"
+      ],
+      "evidence": "API documentation reviewed through web-indexed/cached text. Direct HTTPS requests fail certificate verification; the documented HTTP WFS host on port 8081 also failed to connect. TLS verification was never disabled.",
+      "authentication": "SDK example contains a caller-provided API-key placeholder. Actual WFS authentication requirements could not be confirmed because no live service response was obtained. No key or token requested or used.",
+      "polygon_retrieval": "Documented in principle; zero current nine-ward polygons retrieved from this service.",
+      "vintage": "UNVERIFIED; examples still reference former district layers. Documentation presence does not establish a post-2025 dataset.",
+      "redistribution_permission": "UNVERIFIED; API availability is not a license to redistribute administrative geometry.",
+      "needed_action": "Service operator must restore valid TLS/connectivity and provide current layer/version documentation, legitimate access if required, and reuse terms."
+    },
+    {
+      "source_id": "cantho-gis-portal-02b",
+      "name": "Cổng GIS thành phố Cần Thơ",
+      "url": "https://gisportal.cantho.gov.vn/",
+      "verification_state": "UNVERIFIED",
+      "manager_evidence": "Indexed portal footer identifies Văn phòng UBND thành phố Cần Thơ. It also contains legacy address names, so its maintenance date is not established.",
+      "evidence": "Direct portal request timed out. Indexed pages identify an ArcGIS-based portal, but no reachable current administrative layer or public FeatureServer/MapServer service directory could be verified. Alternative gis.cantho.gov.vn returned the default IIS page, not a GIS catalog.",
+      "authentication": "UNVERIFIED; connection failure is not evidence of an authentication requirement.",
+      "polygon_retrieval": "Zero polygons obtained; GeoJSON export capability could not be tested.",
+      "redistribution_permission": "UNVERIFIED",
+      "needed_action": "Obtain the public REST service URL or an authorized export, with post-merger layer metadata and redistribution terms from the portal operator."
+    },
+    {
+      "source_id": "bando-public-publisher-review",
+      "name": "Bản đồ sau sáp nhập – Nhà xuất bản Tài nguyên - Môi trường và Bản đồ Việt Nam",
+      "url": "https://sapnhap.bando.com.vn/",
+      "verification_state": "UNVERIFIED",
+      "publisher_url": "https://bando.com.vn/",
+      "government_context_url": "https://baochinhphu.vn/tra-cuu-dia-gioi-sau-sap-nhap-qua-ban-do-dien-tu-102250708175104468.htm",
+      "evidence": "The publisher frontend openly calls p.co_dvhc, p.co_dvhc_id and pread_json. Read-only requests without credentials returned catalog records, metadata and MultiPolygon geometry for the nine requested wards. Raw geometry is retained only in ignored review cache, not published or substituted for OSM.",
+      "authentication": "No authentication or session credentials used for the observed public read operations. This does not imply a general API service contract.",
+      "scale_and_accuracy": "No survey accuracy, acceptance decision, geometry revision date or source map scale established for the ward vector layer. The governmental article lists national map scales 1:9,000,000, 1:2,200,000 and 1:3,500,000; these must not be assigned to this ward vector layer or interpreted as metre-level accuracy.",
+      "redistribution_permission": "UNVERIFIED. The site's community/non-commercial publication notice and free viewing do not establish an open geometry redistribution license.",
+      "adoption_decision": "Reference comparison only; not VERIFIED_OFFICIAL. Keep OSM unchanged and publish no Bando coordinates.",
+      "needed_action": "Publisher or competent authority must confirm source lineage, current approved ward boundaries, accuracy/version, and permission for storage, transformation and public GitHub Pages redistribution."
+    },
+    {
+      "source_id": "official-supplementary-02b",
+      "name": "Nguồn công bố chính thức bổ sung",
+      "url": "https://sokhcn.cantho.gov.vn/default.aspx?nid=29540&pid=57",
+      "verification_state": "UNVERIFIED",
+      "legal_source_url": "https://nvsk.vnanet.vn/toan-van-nghi-quyet-so-1668-nq-ubtvqh15-sap-xep-cac-don-vi-hanh-chinh-cap-xa-cua-thanh-pho-can-tho-nam-2025-1-172059.vna",
+      "evidence": "Reviewed a Cần Thơ government science/technology portal article dated 08/07/2025 and the 1668 resolution text. They support post-merger administrative context and names/scopes, but no approved, downloadable nine-ward polygon package was obtained. Additional government-domain searches did not supply such a package in this review; this is not proof that none exists.",
+      "previous_vnsdi_evidence": "The earlier Stage 2 VNSDI MapServer response was ArcGIS 499 Token Required; retained original evidence is unchanged. No attempt was made to bypass it.",
+      "redistribution_permission": "No geometry package to license or accept.",
+      "needed_action": "Request a current approved GIS export and its reuse terms from the competent Cần Thơ administrative-boundary custodian, ordinarily through Sở Nội vụ and the relevant mapping/environment authority. No message has been sent on the user's behalf."
+    }
+  ]
+}

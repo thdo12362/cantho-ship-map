@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "technical_validation_passed": true,
+  "stage_2_complete": false,
+  "provenance_checked_against_local_osm_cache": true,
+  "counts": {
+    "ward_records": 9,
+    "valid_ward_polygons": 9,
+    "official_verified_ward_polygons": 0,
+    "roads": 7001,
+    "named_roads": 2187,
+    "unnamed_roads": 4814,
+    "identified_alley_ways": 733,
+    "assigned_segments": 0,
+    "unverified_segments": 7535
+  },
+  "provisional_interior_segments": 7109,
+  "ambiguous_boundary_segments": 426,
+  "outside_reference_segments": 0,
+  "reference_boundary_overlap_m2": 0,
+  "road_count_unit": "OSM way IDs, not unique street names or unique physical alleys",
+  "roads_pending_official_membership": 7001,
+  "road_type_counts": {
+    "service_road": 1258,
+    "named_road": 1679,
+    "unnamed_road": 267,
+    "named_alley": 459,
+    "unnamed_branch": 3064,
+    "unnamed_alley": 274
+  },
+  "highway_counts": {
+    "service": 1742,
+    "primary": 54,
+    "residential": 3858,
+    "track": 26,
+    "tertiary": 429,
+    "secondary": 225,
+    "path": 4,
+    "trunk": 292,
+    "tertiary_link": 48,
+    "unclassified": 186,
+    "trunk_link": 43,
+    "secondary_link": 59,
+    "primary_link": 17,
+    "living_street": 11,
+    "cycleway": 1,
+    "motorway_link": 5,
+    "motorway": 1
+  },
+  "study_bbox": [
+    105.6655276,
+    9.9543542,
+    105.8454722,
+    10.1178966
+  ],
+  "road_scope": "intersects_osm_reference_ward_union",
+  "missing_boundary_ward_ids": [],
+  "errors": [],
+  "blockers": [
+    "ct-ninh-kieu: polygon not officially verified",
+    "ct-cai-khe: polygon not officially verified",
+    "ct-tan-an: polygon not officially verified",
+    "ct-an-binh: polygon not officially verified",
+    "ct-binh-thuy: polygon not officially verified",
+    "ct-long-tuyen: polygon not officially verified",
+    "ct-thoi-an-dong: polygon not officially verified",
+    "ct-cai-rang: polygon not officially verified",
+    "ct-hung-phu: polygon not officially verified",
+    "7535 provisional/ambiguous road segments lack official ward assignment",
+    "OSM reference ward union is not verified against official boundaries; original road ways may extend outside it"
+  ],
+  "missing_official_boundary_ward_ids": [
+    "ct-an-binh",
+    "ct-binh-thuy",
+    "ct-cai-khe",
+    "ct-cai-rang",
+    "ct-hung-phu",
+    "ct-long-tuyen",
+    "ct-ninh-kieu",
+    "ct-tan-an",
+    "ct-thoi-an-dong"
+  ],
+  "coverage_by_ward": [
+    {
+      "ward_id": "ct-ninh-kieu",
+      "name": "Ninh Kiều",
+      "valid_reference_polygon": true,
+      "official_boundary_verified": false,
+      "candidate_original_road_ways": 874,
+      "street_alley_completeness": "unknown_not_field_verified"
+    },
+    {
+      "ward_id": "ct-cai-khe",
+      "name": "Cái Khế",
+      "valid_reference_polygon": true,
+      "official_boundary_verified": false,
+      "candidate_original_road_ways": 590,
+      "street_alley_completeness": "unknown_not_field_verified"
+    },
+    {
+      "ward_id": "ct-tan-an",
+      "name": "Tân An",
+      "valid_reference_polygon": true,
+      "official_boundary_verified": false,
+      "candidate_original_road_ways": 886,
+      "street_alley_completeness": "unknown_not_field_verified"
+    },
+    {
+      "ward_id": "ct-an-binh",
+      "name": "An Bình",
+      "valid_reference_polygon": true,
+      "official_boundary_verified": false,
+      "candidate_original_road_ways": 699,
+      "street_alley_completeness": "unknown_not_field_verified"
+    },
+    {
+      "ward_id": "ct-binh-thuy",
+      "name": "Bình Thủy",
+      "valid_reference_polygon": true,
+      "official_boundary_verified": false,
+      "candidate_original_road_ways": 759,
+      "street_alley_completeness": "unknown_not_field_verified"
+    },
+    {
+      "ward_id": "ct-long-tuyen",
+      "name": "Long Tuyền",
+      "valid_reference_polygon": true,
+      "official_boundary_verified": false,
+      "candidate_original_road_ways": 769,
+      "street_alley_completeness": "unknown_not_field_verified"
+    },
+    {
+      "ward_id": "ct-thoi-an-dong",
+      "name": "Thới An Đông",
+      "valid_reference_polygon": true,
+      "official_boundary_verified": false,
+      "candidate_original_road_ways": 632,
+      "street_alley_completeness": "unknown_not_field_verified"
+    },
+    {
+      "ward_id": "ct-cai-rang",
+      "name": "Cái Răng",
+      "valid_reference_polygon": true,
+      "official_boundary_verified": false,
+      "candidate_original_road_ways": 1115,
+      "street_alley_completeness": "unknown_not_field_verified"
+    },
+    {
+      "ward_id": "ct-hung-phu",
+      "name": "Hưng Phú",
+      "valid_reference_polygon": true,
+      "official_boundary_verified": false,
+      "candidate_original_road_ways": 988,
+      "street_alley_completeness": "unknown_not_field_verified"
+    }
+  ],
+  "coverage_claim": "OSM snapshot intersecting nine reference boundary relations; no claim of complete street/alley coverage or official administrative membership."
+}

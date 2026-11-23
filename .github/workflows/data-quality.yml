@@ -1,0 +1,30 @@
+name: Reference GIS data quality
+on:
+  push:
+    paths:
+      - 'public/data/**'
+      - 'scripts/gis/**'
+      - '.github/workflows/data-quality.yml'
+  pull_request:
+    paths:
+      - 'public/data/**'
+      - 'scripts/gis/**'
+      - '.github/workflows/data-quality.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reference-data-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: scripts/gis/requirements.txt
+      - run: python -m pip install -r scripts/gis/requirements.txt
+      - name: Test geometry and validation rules
+        run: python -m unittest discover -s scripts/gis -p 'test_*.py' -v
+      - name: Validate reference data (does not certify official boundaries)
+        run: python scripts/gis/validate_data.py
